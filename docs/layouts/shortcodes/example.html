@@ -1,0 +1,5 @@
+<div class="bd-example">
+{{ $lang := .Get 0 }}
+{{ $input := .Inner | markdownify }}
+{{ highlight $input $lang "" }}
+</div>
